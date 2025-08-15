@@ -223,7 +223,7 @@ text {
     width: 200%;
   }
   .Pourquoi-rejoindre2 {
-    width: 200%;
+    width: 194%;
   }
 }
 @media (max-width: 850px) {
@@ -255,5 +255,19 @@ text {
   }
   .robot {
     margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .robot {
+    display: none;
+  }
+  .ilia-blog {
+    display: none;
+  }
+  .Pourquoi-rejoindre1 {
+    width: 85%;
+  }
+  .Pourquoi-rejoindre2 {
+    width: 80%;
   }
 }
