@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+body {
+  background-color: #e4edff;
+  font-family: "Fredoka", sans-serif;
+  /* margin: 85px 30px 0; */
+  margin: 17vh 3vw 0;
+  /* height: 1200px; */
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 12%;
+  font-weight: 550;
+  background-color: #e4edff;
+  z-index: 100;
+}
+
+.logo {
+  /* margin: 0 10px 0 50px; */
+  margin: 0 1vw 0 3vw;
+  transition: all 0.2s ease;
+}
+
+.logo-img {
+  /* margin: 3px 0 0 -5px; */
+  margin: 0.5vh 0 0 -1vw;
+  /* width: 25px; */
+  width: 2.2vw;
+  background-color: #0051ff;
+  /* padding: 7px; */
+  padding: 0.5em;
+  border-radius: 100%;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  min-width: 25px;
+}
+.logo-img:hover {
+  background-color: #5b8fff;
+}
+.ILIA-btn {
+  font-weight: 550;
+  color: white;
+  background-color: #874ce4;
+  /* padding: 8px; */
+  padding: 5em;
+  border-width: 0;
+  border-radius: 20em;
+  /* padding: 14px 20px; */
+  padding: 2.5vh 1.5vw;
+  min-width: 50px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.ILIA-btn:hover {
+  background-color: #e4edff;
+  color: #874ce4;
+  border-color: #874ce4;
+  border-width: 1px;
+}
+
+.header-items {
+  font-size: 100%;
+  flex: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.header-items a {
+  text-decoration: none;
+}
+
+.header-items:hover {
+  /* font-size: 17px; */
+  font-size: 110%;
+}
+
+.accueil {
+  color: #874ce4;
+  transition: color 0.2s;
+}
+.ressources {
+  color: #2157cb;
+  transition: color 0.2s;
+}
+.club-ilia {
+  color: #874ce4;
+  transition: color 0.2s;
+}
+.contact {
+  color: #2157cb;
+  transition: color 0.2s;
+}
+
+.accueil a:visited {
+  color: #874ce4;
+}
+
+.ressources a:visited {
+  color: #2157cb;
+  transition: color 0.2s;
+}
+.club-ilia a:visited {
+  color: #874ce4;
+  transition: color 0.2s;
+}
+.contact a:visited {
+  color: #2157cb;
+  transition: color 0.2s;
+}
+@media (max-width: 600px) {
+  .header-items {
+    font-size: 80%;
+    transition: all 0.2s ease;
+  }
+  .header-items:hover {
+    font-size: 90%;
+  }
+}

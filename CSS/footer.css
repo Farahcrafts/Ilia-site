@@ -1,0 +1,24 @@
+.footer-container {
+  margin-top: 6em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+}
+.footer-elements {
+  flex: 1;
+  color: #2157cb;
+  font-size: 1em;
+}
+
+.footer-elements a {
+  color: #2157cb;
+  text-decoration: underline 0.5px #2157cb;
+}
+.footer-elements:visited {
+  color: #874ce4;
+}
+.paragraph {
+  text-align: end;
+}
