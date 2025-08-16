@@ -5,128 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Bienvenue au site web de la filiere ILIA!"
+      content="Bienvenue au site web de la filiere ILIA"
     />
-    <title>ILIA SITE</title>
-    <link rel="icon" href="images/brackets.png" />
-    <link rel="stylesheet" href="CSS/header -style.css" />
+    <link rel="stylesheet" href="CSS/navigation-bar.css" />
     <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/cards.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="icon" href="images/brackets.png" type="image/x-icon" />
+    <title>ILIA</title>
   </head>
   <body>
-    <header>
-      <!-- header part -->
-      <div class="header">
-        <div class="logo">
-          <img class="logo-img" src="images/logo.png" alt="logo" />
-        </div>
-
-        <div class="header-items">
-          <a href="#"><button class="ILIA-btn">ILIA</button></a>
-        </div>
-        <div class="header-items accueil">
-          <a href="index.html">Accueil</a>
-        </div>
-        <div class="header-items ressources">
-          <a href="ressoources.html">Ressources</a>
-        </div>
-        <div class="header-items club-ilia">
-          <a href="Club-ilia.html">Club ILIA</a>
-        </div>
-        <div class="header-items contact">
-          <a href="contact-index.html">Contactez Nous</a>
-        </div>
+    <div class="navigation-bar">
+      <div class="navigation-item logo">
+        <a href="#top">
+          <img src="images/logo.png" alt="logo" />
+        </a>
       </div>
-    </header>
-    <main>
-      <!-- first section -->
-      <section id="welcome">
-        <h1>Bienvenue sur le site de la communauté ILIA</h1>
+      <div class="navigation-item ilia-btn"><button>ILIA</button></div>
+      <div class="navigation-item accueil"><a href="">Acceuil</a></div>
+      <div class="navigation-item ressources"><a href="">Ressources</a></div>
+      <div class="navigation-item club-ilia"><a href="">Club ILIA</a></div>
+      <div class="navigation-item contact"><a href="">Contactez nous</a></div>
+    </div>
 
-        <div class="main">
-          <!-- left-bloc -->
-          <div class="left-bloc">
-            <div class="qui-sommes-nous">
-              <h3>Qui sommes nous?</h3>
-              <p>
-                Nous sommes une communauté d'étudiants passionnés par le
-                développement logiciel et l'intelligence artificielle, à l'ENSA
-                de Fès.
-              </p>
-            </div>
-            <div class="blog-robot">
-              <div class="ilia-blog">
-                <svg viewBox="0 0 100 100 ">
-                  <defs>
-                    <path
-                      id="circle"
-                      d="
+    <section id="welcome">
+      <h1>Bienvenue sur le site de la communauté ILIA</h1>
+
+      <div class="main-container">
+        <div class="first-bloc">
+          <div class="qui-sommes-nous">
+            <h3>Qui sommes nous?</h3>
+            <p>
+              Nous sommes une communauté d'étudiants passionnés par le
+              développement logiciel et l'intelligence artificielle, à l'ENSA de
+              Fès.
+            </p>
+          </div>
+
+          <div class="blog-robot">
+            <div class="ilia-blog">
+              <svg viewBox="0 0 100 100 ">
+                <defs>
+                  <path
+                    id="circle"
+                    d="
                     M 50, 50 
                     m -37, 0 
                     a 37,37 0 1,1 74,0
                     a 37,37 0 1,1 -74,0
                     "
-                    />
-                  </defs>
-                  <text>
-                    <textPath xlink:href="#circle">
-                      &#8226; ILIA BLOG &#8226; DISCOVER THE NEWS
-                    </textPath>
-                  </text>
-                </svg>
-                <div class="image-inside-the-circle">
-                  <a href="#ilia-blogs"
-                    ><img
-                      class="image-circle"
-                      src="images/megaphone.png"
-                      alt="megaphone"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div class="robot-image">
-                <img class="robot" src="images/robot.png" alt="robot image" />
-                <div class="hi-message">Hi There!</div>
+                  />
+                </defs>
+                <text>
+                  <textPath xlink:href="#circle">
+                    &#8226; ILIA BLOG &#8226; DISCOVER THE NEWS
+                  </textPath>
+                </text>
+              </svg>
+              <div class="image-inside-the-circle">
+                <a href="#ilia-blogs"
+                  ><img
+                    class="image-circle"
+                    src="images/megaphone.png"
+                    alt="megaphone"
+                  />
+                </a>
               </div>
             </div>
-          </div>
-          <!-- center-bloc -->
-          <div class="center-bloc">
-            <img class="cap" src="images/cap.png" alt="cap" />
-
-            <img class="book" src="images/book.png" alt="book" />
-            <img class="folder" src="images/folder.png" alt="folder" />
-            <img
-              class="guy-img"
-              src="images/guy.png"
-              alt="Software engineering and Ai Student"
-            />
-          </div>
-          <!-- right-bloc -->
-          <div class="right-bloc">
-            <div class="Pourquoi-rejoindre1">
-              <h3>Pourquoi rejoindre la communauté ILIA?</h3>
-              <p>
-                Rejoindre ILIA, c'est plonger dans un univers où innovation,
-                créativité et technologie se rencontrent. Ici, tu ne te
-                contentes pas d'apprendre : tu crées, tu partages
-              </p>
-            </div>
-            <div class="Pourquoi-rejoindre2">
-              <p>
-                et tu construis l'avenir avec des esprits passionnés. Entre
-                projets ambitieux, formations stimulantes et esprit d'équipe,
-                chaque jour est une nouvelle opportunité. Et si tu venais
-                découvrir ce que signifie vraiment apprendre autrement ?
-              </p>
+            <div class="robot-div">
+              <img src="images/robot.png" alt="robot" class="robot" />
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- moving band section -->
+        <div class="second-bloc">
+          <img class="guy" src="images/Home.png" alt="guy images" />
+        </div>
+
+        <div class="third-bloc">
+          <div class="pourquoi-rejoindre1">
+            <h3>Pourquoi nous rejoindre?</h3>
+            <p>
+              Rejoindre ILIA, c'est plonger dans un univers où innovation,
+              créativité et technologie se rencontrent. Ici, tu ne te contentes
+              pas d'apprendre : tu crées, tu partages
+            </p>
+          </div>
+
+          <div class="pourquoi-rejoindre2">
+            <p>
+              et tu construis l'avenir avec des esprits passionnés. Entre
+              projets ambitieux, formations stimulantes et esprit d'équipe,
+              chaque jour est une nouvelle opportunité. Et si tu venais
+              découvrir ce que signifie vraiment apprendre autrement ?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="moving-band">
       <div id="ilia-blogs" class="ilia-blogs-band-container">
         <div class="ilia-blogs-band">
           ILIA BLOGS &nbsp;&nbsp; ILIA BLOGS &nbsp;&nbsp; ILIA BLOGS
@@ -140,107 +117,109 @@
           ILIA BLOGS &nbsp;&nbsp; ILIA BLOGS &nbsp;&nbsp;
         </div>
       </div>
-      <!-- last section -->
-      <section>
-        <div class="blog-cards-container">
-          <div class="blog-card">
-            <div>
-              <img
-                src="images/cards/card 1 .png"
-                alt="blog image"
-                loading="lazy"
-              />
-            </div>
-            <div><h3>Tech & Design Fusion: Collaborative Showcase</h3></div>
-            <div>
-              <p>
-                A university event showcasing the fusion of technology and
-                creativity through interactive workshops...
-              </p>
-            </div>
-            <div><button>Read Now</button></div>
+    </section>
+
+    <section id="cards">
+      <div class="blog-cards-container">
+        <div class="blog-card">
+          <div>
+            <img
+              src="images/cards/card 1 .png"
+              alt="blog image"
+              loading="lazy"
+            />
           </div>
-          <div class="blog-card">
-            <div>
-              <img
-                src="images/cards/card 2.png"
-                alt="blog image"
-                loading="lazy"
-              />
-            </div>
-            <div>
-              <h3>Creative Poster Showcase: Exploring Design and Typography</h3>
-            </div>
-            <div>
-              <p>
-                A university activity featuring an engaging poster exhibition
-                ...
-              </p>
-            </div>
-            <div><button>Read Now</button></div>
+          <div><h3>Tech & Design Fusion: Collaborative Showcase</h3></div>
+          <div>
+            <p>
+              A university event showcasing the fusion of technology and
+              creativity through interactive workshops...
+            </p>
           </div>
-          <div class="blog-card">
-            <div>
-              <img
-                src="images/cards/card 3.png"
-                alt="blog image"
-                loading="lazy"
-              />
-            </div>
-            <div>
-              <h3>
-                Innovation Under the Lights: A High-Stakes Hackathon Event
-              </h3>
-            </div>
-            <div>
-              <p>
-                A university hackathon bringing together students, developers,
-                and innovators..
-              </p>
-            </div>
-            <div><button>Read Now</button></div>
-          </div>
-          <div class="blog-card">
-            <div>
-              <img
-                src="images/cards/card 4.png"
-                alt="blog image"
-                loading="lazy"
-              />
-            </div>
-            <div>
-              <h3>
-                AI Frontier: The Rise of OpenAI and Collaborative Innovation
-              </h3>
-            </div>
-            <div>
-              <p>
-                A university activity exploring the cutting-edge advancements in
-                artificial...
-              </p>
-            </div>
-            <div><button>Read Now</button></div>
-          </div>
-          <div class="blog-card">
-            <div>
-              <img
-                src="images/cards/card 5.png"
-                alt="blog image"
-                loading="lazy"
-              />
-            </div>
-            <div><h3>The Nexus of Humanity and Technology</h3></div>
-            <div>
-              <p>
-                Where human hands meet robotic arms, exploring the profound
-                intersection of innovation and connection.
-              </p>
-            </div>
-            <div><button>Read Now</button></div>
-          </div>
+          <div><button>Read Now</button></div>
         </div>
-      </section>
-    </main>
+
+        <div class="blog-card">
+          <div>
+            <img
+              src="images/cards/card 2.png"
+              alt="blog image"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <h3>Creative Poster Showcase: Exploring Design and Typography</h3>
+          </div>
+          <div>
+            <p>
+              A university activity featuring an engaging poster exhibition ...
+            </p>
+          </div>
+          <div><button>Read Now</button></div>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <img
+              src="images/cards/card 3.png"
+              alt="blog image"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <h3>Innovation Under the Lights: A High-Stakes Hackathon Event</h3>
+          </div>
+          <div>
+            <p>
+              A university hackathon bringing together students, developers, and
+              innovators..
+            </p>
+          </div>
+          <div><button>Read Now</button></div>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <img
+              src="images/cards/card 4.png"
+              alt="blog image"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <h3>
+              AI Frontier: The Rise of OpenAI and Collaborative Innovation
+            </h3>
+          </div>
+          <div>
+            <p>
+              A university activity exploring the cutting-edge advancements in
+              artificial...
+            </p>
+          </div>
+          <div><button>Read Now</button></div>
+        </div>
+
+        <div class="blog-card">
+          <div>
+            <img
+              src="images/cards/card 5.png"
+              alt="blog image"
+              loading="lazy"
+            />
+          </div>
+          <div><h3>The Nexus of Humanity and Technology</h3></div>
+          <div>
+            <p>
+              Where human hands meet robotic arms, exploring the profound
+              intersection of innovation and connection.
+            </p>
+          </div>
+          <div><button>Read Now</button></div>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="footer-container">
         <div class="footer-elements">
@@ -251,9 +230,6 @@
         </div>
         <div class="footer-elements paragraph">
           <div>
-            Cette page a été réalisée par les étudiants de première année ILIA.
-          </div>
-          <div>
             <a href="https://ensaf.ac.ma/" target="_blank"
               >En savoir plus sur l'ENSA et ses autres filières.
             </a>
@@ -261,6 +237,5 @@
         </div>
       </div>
     </footer>
-    <script src="index.js"></script>
   </body>
 </html>
