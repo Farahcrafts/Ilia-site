@@ -34,15 +34,15 @@ p {
     transform: translateX(-100%);
   }
 }
+
 .images-container {
-  height: 15em;
-  animation: slide-right 20s linear infinite;
-  margin-top: 1em;
-  margin-bottom: 1em;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
   column-gap: 1em;
+  height: 15em;
+  animation: slide-right 20s linear infinite;
+  margin: 1em 0 1em 0;
 }
 .images-container img {
   width: 100%;
@@ -59,22 +59,22 @@ p {
   color: #0a2b6c;
 }
 .formulaire input {
+  background-color: white;
+  font-family: "Fredoka", sans-serif;
+  padding-left: 1em;
   height: 2em;
   border-radius: 1em;
   border-style: solid;
   border-width: 1px;
-  padding-left: 1em;
-  background-color: white;
-  font-family: "Fredoka", sans-serif;
 }
 .formulaire select {
+  background-color: white;
+  font-family: "Fredoka", sans-serif;
+  padding-left: 1em;
   height: 2em;
   border-radius: 1em;
   border-style: solid;
   border-width: 1px;
-  padding-left: 1em;
-  background-color: white;
-  font-family: "Fredoka", sans-serif;
 }
 .formulaire textarea {
   height: 5em;
@@ -93,27 +93,27 @@ p {
 }
 
 .formulaire {
-  background-color: #c0a8e7;
-  background: linear-gradient(135deg, #c0a8e7 0%, #9b76d8 100%);
-  max-width: 30em;
-  padding: 1em;
-  border-radius: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 0.5em;
+  background-color: #aab8ff;
+  background: linear-gradient(135deg, #aab8ff 0%, #b695ea 100%);
+  max-width: 30em;
+  padding: 1em;
+  border-radius: 1.5em;
 }
 .formulaire input[type="checkbox"] {
   accent-color: #66288f;
   height: 1em;
 }
 .reset-submit {
-  margin-top: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 1em;
+  margin-top: 1em;
 }
 .reset-submit button {
   background-color: #2157cb;
