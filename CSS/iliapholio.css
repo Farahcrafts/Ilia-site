@@ -1,14 +1,196 @@
-.etudiant {
-  background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+body {
+  font-family: "Fredoka", sans-serif;
+  background-color: #e4edff;
+  text-align: center;
+}
+h1 {
+  background: linear-gradient(45deg, #2157cb, #874ce4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3em;
+  margin: 2em 0 0 0;
+}
+h2 {
+  background: linear-gradient(45deg, #874ce4, #2157cb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+p {
+  color: #2157cb;
+  margin: 0 0 3em 0;
+}
+
+.search-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.search-student {
+  font-family: "Fredoka", sans-serif;
+  height: 2em;
+  width: 60vw;
+  max-width: 400px;
+  border-bottom-left-radius: 1em;
+  border-top-left-radius: 1em;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #102a60;
+  padding-left: 1em;
+}
+.search-loop {
+  background-color: #9ebbf9;
+  height: 2.37em;
+  margin-left: -2px;
+
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #102a60;
+  transition: all 0.2s ease;
+}
+.search-loop:hover {
+  background-color: #874ce4;
+  transition: all 0.2s ease;
+}
+.search-loop:active {
+  background-color: #8a94ff;
+}
+.search-loop img {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.search-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1em;
+}
+
+.search-buttons button {
+  background-color: #5b8fff;
+  padding: 1em;
+  border: none;
+  border-radius: 1em;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 550;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.search-buttons button:hover {
+  background-color: #bc96fa;
+  color: #3c1c71;
+  transition: all 0.2s ease;
+}
+.search-buttons button:active {
+  background-color: #c9acf9;
+}
+.search-buttons a {
+  color: white;
+  text-decoration: none;
+}
+.search-buttons a:visited {
+  color: white;
+}
+
+.promotion-year-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 85vw;
 }
-.image-name {
+.promotion-column {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 5em;
+}
+
+.etudiant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-radius: 1em;
+  background-color: #bc96fa;
+  background: linear-gradient(135deg, #5b8fff 0%, #bc96fa 50%, #a16cf6 100%);
+  width: 80vw;
+  height: 20vh;
+  padding: 1.5em;
+  margin: 0 auto 1em auto;
+  transition: all 0.2s ease;
+}
+.etudiant:hover {
+  background-color: #8a94ff;
+  background: linear-gradient(
+    135deg,
+    rgb(173, 179, 255) 100%,
+    #747ee3 0%,
+    #5f69de 50%
+  );
+  width: 83vw;
+  height: 22vh;
+}
+
+.image-name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside {
+  color: #102a60;
+  font-weight: 550;
+  font-size: 1.3em;
+  flex: 3;
+}
+
+.image {
+  flex: 1;
+}
+
+.image-name img {
+  height: 6em;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.etudiant button {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 550;
+  color: #e4edff;
+  background-color: #874ce4;
+  border-radius: 1em;
+  border: none;
+  padding: 0.7em;
+  transition: all 0.2s ease;
+}
+
+.etudiant button:hover {
+  background-color: #a879f3;
+}
+.etudiant button:active {
+  background-color: #709cfc;
+}
+
+@media (min-width: 768px) {
+  .promotion-year-div {
+    flex-direction: row;
+    column-gap: 0.5em;
+  }
+  .etudiant {
+    width: 25vw;
+    height: 15vh;
+    padding: 2.2em 2.2em 4em 2.2em;
+  }
+  .etudiant:hover {
+    width: 27vw;
+    height: 17vh;
+  }
 }

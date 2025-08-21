@@ -133,3 +133,8 @@ p {
   background-color: #c0d4ff;
   color: #0a2b6c;
 }
+
+.submit-message {
+  font-size: 2em;
+  color: #09348a;
+}

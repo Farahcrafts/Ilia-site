@@ -66,134 +66,138 @@
       </p>
 
       <div class="formulaire-div">
-        <form action="https://httpbin.org/get" method="get">
-          <div class="formulaire">
-            <!-- nom prenom -->
-            <div>
-              <label for="nom-prenom">Nom & Prénom</label>
-              <br />
-              <input
-                type="text"
-                id="nom-prenom"
-                name="nom-prenom"
-                placeholder="Nom Prénom"
-                required
-                autofocus
-              />
-            </div>
-            <!-- age -->
-            <div>
-              <label for="age">Âge</label>
-              <br />
-              <input
-                type="number"
-                id="age"
-                name="age"
-                min="17"
-                max="30"
-                placeholder="18"
-                required
-              />
-            </div>
-            <!-- annee universitaire -->
-            <div>
-              <label for="annee-universitaire">Année universitaire</label>
-              <br />
-              <select name="annee-universitaire" id="annee-universitaire">
-                <option value="CP1">CP1</option>
-                <option value="CP2">CP2</option>
-                <option value="1CI">1CI</option>
-                <option value="2CI">2CI</option>
-                <option value="3CI">3CI</option>
-                <option value="4CI">4CI</option>
-                <option value="5CI">5CI</option>
-                <option value="Laureat">Lauréat</option>
-              </select>
-            </div>
-            <!-- filiere -->
-            <div>
-              <label for="filiere">Filière</label>
-              <br />
-              <select name="filiere" id="filiere">
-                <option value="CP">CP</option>
-                <option value="ILIA">ILIA</option>
-                <option value="GDNC">GDNC</option>
-                <option value="3IACN">3IACN</option>
-                <option value="ISDIA">ISDIA</option>
-                <option value="G.I">G.I</option>
-                <option value="G.M">G.M</option>
-                <option value="GESI">GESI</option>
-                <option value="G.M.T">G.M.T</option>
-                <option value="G.Indus">G.Indus</option>
-                <option value="GSCSI">GSCSI</option>
-                <option value="ISEIA">ISEIA</option>
-              </select>
-            </div>
-            <!-- phone number -->
-            <div>
-              <label for="phone-number">Numéro de téléphone</label>
-              <br />
-              <input
-                type="tel"
-                name="phone-number"
-                required
-                placeholder="0600000000"
-              />
-            </div>
-            <!-- motivation pour rejoindre -->
-            <div>
-              <label for="motivation"
-                >Pourquoi souhaitez-vous rejoindre le club ?</label
-              >
-              <br />
-              <textarea
-                name="motivation"
-                id="motivation"
-                placeholder="Ta motivation"
-              ></textarea>
-            </div>
-            <!-- competences -->
-            <div>
-              <label
-                >Quelles compétences souhaitez-vous développer ou apporter
-                ?</label
-              >
-              <br />
-              <input
-                type="checkbox"
-                name="organisation"
-                id="organisation"
-                value="organisation"
-              />
-              <label for="organisation">Organisation</label>
-              <br />
-              <input type="checkbox" name="design" id="design" value="design" />
-              <label for="design">Design</label>
-              <br />
-              <input
-                type="checkbox"
-                name="programmation"
-                id="programmation"
-                value="programmation"
-              />
-
-              <label for="programmation">Programmation</label>
-              <br />
-              <input
-                type="checkbox"
-                name="communication"
-                id="communication"
-                value="communication"
-              />
-              <label for="communication">Communication</label>
-            </div>
-            <div class="reset-submit">
-              <button type="submit">Envoyer ma demande</button>
-              <button type="reset">Réinitialiser</button>
-            </div>
+        <div class="formulaire">
+          <!-- nom prenom -->
+          <div>
+            <label for="nom-prenom">Nom & Prénom</label>
+            <br />
+            <input
+              type="text"
+              id="nom-prenom"
+              name="nom-prenom"
+              placeholder="Nom Prénom"
+              required
+              autofocus
+            />
           </div>
-        </form>
+          <!-- age -->
+          <div>
+            <label for="age">Âge</label>
+            <br />
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="17"
+              max="30"
+              placeholder="18"
+              required
+            />
+          </div>
+          <!-- annee universitaire -->
+          <div>
+            <label for="annee-universitaire">Année universitaire</label>
+            <br />
+            <select name="annee-universitaire" id="annee-universitaire">
+              <option value="CP1">CP1</option>
+              <option value="CP2">CP2</option>
+              <option value="1CI">1CI</option>
+              <option value="2CI">2CI</option>
+              <option value="3CI">3CI</option>
+              <option value="4CI">4CI</option>
+              <option value="5CI">5CI</option>
+              <option value="Laureat">Lauréat</option>
+            </select>
+          </div>
+          <!-- filiere -->
+          <div>
+            <label for="filiere">Filière</label>
+            <br />
+            <select name="filiere" id="filiere">
+              <option value="CP">CP</option>
+              <option value="ILIA">ILIA</option>
+              <option value="GDNC">GDNC</option>
+              <option value="3IACN">3IACN</option>
+              <option value="ISDIA">ISDIA</option>
+              <option value="G.I">G.I</option>
+              <option value="G.M">G.M</option>
+              <option value="GESI">GESI</option>
+              <option value="G.M.T">G.M.T</option>
+              <option value="G.Indus">G.Indus</option>
+              <option value="GSCSI">GSCSI</option>
+              <option value="ISEIA">ISEIA</option>
+            </select>
+          </div>
+          <!-- phone number -->
+          <div>
+            <label for="phone-number">Numéro de téléphone</label>
+            <br />
+            <input
+              type="tel"
+              name="phone-number"
+              required
+              placeholder="0600000000"
+            />
+          </div>
+          <!-- motivation pour rejoindre -->
+          <div>
+            <label for="motivation"
+              >Pourquoi souhaitez-vous rejoindre le club ?</label
+            >
+            <br />
+            <textarea
+              name="motivation"
+              id="motivation"
+              placeholder="Ta motivation"
+            ></textarea>
+          </div>
+          <!-- competences -->
+          <div>
+            <label
+              >Quelles compétences souhaitez-vous développer ou apporter
+              ?</label
+            >
+            <br />
+            <input
+              type="checkbox"
+              name="organisation"
+              id="organisation"
+              value="organisation"
+            />
+            <label for="organisation">Organisation</label>
+            <br />
+            <input type="checkbox" name="design" id="design" value="design" />
+            <label for="design">Design</label>
+            <br />
+            <input
+              type="checkbox"
+              name="programmation"
+              id="programmation"
+              value="programmation"
+            />
+
+            <label for="programmation">Programmation</label>
+            <br />
+            <input
+              type="checkbox"
+              name="communication"
+              id="communication"
+              value="communication"
+            />
+            <label for="communication">Communication</label>
+          </div>
+          <div class="reset-submit">
+            <button id="submit" type="submit">Envoyer ma demande</button>
+            <button type="reset">Réinitialiser</button>
+          </div>
+        </div>
       </div>
+      <label
+        class="submit-message"
+        id="submit-message"
+        for="submit-message"
+      ></label>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>

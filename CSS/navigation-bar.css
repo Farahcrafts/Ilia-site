@@ -18,7 +18,7 @@ body {
 }
 
 .navigation-item {
-  font-size: 70%;
+  font-size: 65%;
   font-weight: 550;
 }
 
@@ -26,7 +26,7 @@ body {
   text-decoration: none;
 }
 
-.ilia-btn button {
+/* .ilia-btn button {
   font-family: "Fredoka", sans-serif;
   color: #e4edff;
   font-weight: 550;
@@ -45,7 +45,7 @@ body {
 }
 .ilia-btn button:active {
   background-color: #2157cb;
-}
+} */
 
 .logo img {
   margin-left: 0.5em;
@@ -66,9 +66,12 @@ body {
 .club-ilia a {
   color: #874ce4;
 }
+.ILIAFOLIO a {
+  color: #2157cb;
+}
 .contact a {
   margin-right: 0.5em;
-  color: #2157cb;
+  color: #874ce4;
 }
 
 .accueil:hover {
@@ -78,6 +81,9 @@ body {
   font-size: 110%;
 }
 .club-ilia :hover {
+  font-size: 110%;
+}
+.ILIAFOLIO :hover {
   font-size: 110%;
 }
 .contact :hover {
@@ -93,6 +99,17 @@ body {
 .club-ilia a :visited {
   color: #874ce4;
 }
-.contact a:visited {
+.ILIAFOLIO a :visited {
   color: #2157cb;
+}
+.contact a:visited {
+  color: #874ce4;
+}
+@media (min-width: 768px) {
+  /* .ilia-btn button {
+    opacity: 1;
+  } */
+  .navigation-item {
+    font-size: 1em;
+  }
 }

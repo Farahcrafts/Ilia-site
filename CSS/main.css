@@ -140,9 +140,9 @@ svg {
   }
 }
 @media (min-width: 768px) {
-  .ilia-btn button {
+  /* .ilia-btn button {
     opacity: 1;
-  }
+  } */
   .navigation-item {
     font-size: 100%;
   }
