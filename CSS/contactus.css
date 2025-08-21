@@ -1,0 +1,206 @@
+/* hebrew */
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 300 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredoka/v16/X7n64b87HvSqjb_WIi2yDCRwoQ_k7367_DWs89XyHw.woff2) format('woff2');
+  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 300 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredoka/v16/X7n64b87HvSqjb_WIi2yDCRwoQ_k7367_DWg89XyHw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 300 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredoka/v16/X7n64b87HvSqjb_WIi2yDCRwoQ_k7367_DWu89U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+            background-color: #e4edff;
+            font-family: "fredoka", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        P{ font-size: large;
+          font-family: "fredoka", sans-serif;
+          color: #093e62;
+           max-width: 500px;
+            margin: 10px auto;
+            padding: 20px;   
+            background: #cbbae7;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+           
+        }
+
+        .contact-form-container {
+            max-width: 500px;
+            margin: 50px auto; /* Centre horizontalement */
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .contact-form-container label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .contact-form-container input,
+        .contact-form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 3px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form-container input[type="submit"] {
+            background: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-form-container input[type="submit"]:hover {
+            background: #2980b9;
+        }
+
+        .ROBOT {position: absolute;
+            max-width: 500px;
+            top: 20%;
+            right: 70%;
+            
+        }
+        .MESSAGE {position: absolute;
+            max-width: 200px;
+            top: 50%;
+            right: 10%;
+        }
+
+        .laptop {position: absolute;
+            max-width: 200px;
+            top: 70%;
+            left: 10%;
+        }
+
+        .direct-info {
+            margin-top: 20px;
+            text-align: left;
+        }
+         /* Styles pour les écrans moyens (tablettes) */
+    @media (max-width:1024px) and (min-width:600px) {
+      body {
+        background-color: #e4edff;
+      }
+      p {font-size: large;
+          font-family: "fredoka", sans-serif;
+          color: #093e62;
+           max-width: 350px;
+            margin: 10px auto;
+            padding: 20px;   
+            background: #cbbae7;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      }
+      .contact-form-container {
+            max-width:350px;
+            margin: 50px auto; /* Centre horizontalement */
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            }
+      .ROBOT {position: absolute;
+            max-width: 180px;
+            top: 40%;
+            left: 0%;
+            
+        }
+        .MESSAGE {position: absolute;
+            max-width: 100px;
+            top: 50%;
+            right: 0%;
+        }
+
+        .laptop {position: absolute;
+            max-width: 100px;
+            top: 70%;
+            left: 0%;
+        }
+    }
+
+    /* Styles pour les petits écrans (téléphones) */
+    @media (max-width: 600px) {
+      body {
+        background-color:  #e4edff;
+      }
+      p {font-size: large;
+          font-family: "fredoka", sans-serif;
+          color: #093e62;
+           max-width: 300px;
+            margin: 10px auto;
+            padding: 20px;   
+            background: #cbbae7;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        
+      }
+       @media (max-width: 800px) {
+    .robot-icon {
+        display: block;
+        position: fixed; /* reste visible même si on scroll */
+        bottom: 20px;    /* distance du bas de l'écran */
+        right: 20px;     /* distance de la droite */
+        font-size: 40px; /* taille de l'icône */
+        cursor: pointer; /* effet clic si tu veux ajouter une action */
+        z-index: 1000;   /* devant tout */
+    }
+}
+        .MESSAGE {position: absolute;
+            max-width: 50px;
+            top: 100%;
+            right: 0%;
+        }
+
+        .laptop {position: absolute;
+            max-width: 50px;
+            top: 70%;
+            left: 0%;
+        }
+        .contact-form-container {
+            max-width: 300px;
+            margin: 50px auto; /* Centre horizontalement */
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+    }
+    @media (max-width:1440px)  {
+      body {
+        background-color: #e4edff;
+      }
+      p {
+        font-size:large;
+      }
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is our Contact Us page for our branch at [Engineering School Name]."
+    />
+    <link rel="stylesheet" href="CSS/contactus.css" />
+    <link rel="icon" href="images/brackets.png" />
+  </head>
+  <body>
+    <p>
+      Bienvenue sur la page de contact de notre filière <b>ILIA</b> à
+      <b>l'ENSA</b>. Que vous soyez futur étudiant, apprenant actuel ou
+      représentant d'un établissement partenaire, nous sommes à votre
+      disposition pour répondre à vos questions et vous fournir toutes les
+      informations nécessaires. Notre équipe s'engage à vous accompagner dans
+      votre parcours académique et à assurer une communication fluide avec notre
+      antenne.
+    </p>
+
+    <div class="contact-form-container">
+      <form action="#" method="post">
+        <label for="name">Nom Complet</label>
+        <input type="text" id="name" name="full_name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Numéro du téléphone</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+212........."
+          required
+        />
+
+        <label for="message">Raison pour nous contacter</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Écris ton message ici"
+          rows="4"
+          required
+        ></textarea>
+
+        <input type="submit" value="Send" />
+      </form>
+
+      <div class="direct-info">
+        <h3>Direct Contact Information</h3>
+        <ul>
+          <li>📞 Telephone: +212000000000</li>
+          <li>✉ Email: iLIA@example.com</li>
+          <li>
+            <i class="fab fa-instagram"></i>
+            <a href="https://instagram.com/iliaexemple" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/iliaexemple" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <i class="fab fa-facebook"></i>
+            <a href="https://facebook.com/iliaexemple" target="_blank"
+              >Facebook</a
+            >
+          </li>
+        </ul>
+        <p>
+          <strong>Heure de disponibilité :</strong> Disponible 7 jours sur 7,
+          24h/24.
+        </p>
+      </div>
+    </div>
+    <div class="images">
+      <img
+        class="ROBOT"
+        src="images/contact/IMGBIN_com_-_Download_Transparent_PNG_Images__For_Free-removebg-preview.png"
+        alt="ROBOT"
+      />
+      <img
+        class="MESSAGE"
+        src="images/contact/Ícone_de_notificação_de_mensagem_roxo_Elemento_3D_PSD_zip-removebg-preview.png"
+        alt="MESSAGE"
+      />
+      <img
+        class="laptop"
+        src="images/contact/Contact_Us_Button_stock_illustration__Illustration_of_graphic_-_20506674-removebg-preview.png"
+        alt="laptop"
+      />
+    </div>
+  </body>
+</html>
