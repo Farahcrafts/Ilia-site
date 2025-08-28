@@ -38,66 +38,69 @@
     </header>
 
     <main>
-      <section id="accueil">
-        <h1>Bienvenue sur le site du club ILIA</h1>
-        <h3>
-          Un espace dédié à l'innovation et à la collaboration entre étudiants
-          passionnés d'ingénierie logicielle et d'IA
-        </h3>
-
-        <p id="a">
-          <b>Introduction</b><br />
-          Il y a des idées qui naissent d'un simple échange entre amis et qui
-          finissent par devenir une aventure collective. Notre club est né de
-          cette conviction : ensemble, nous pouvons apprendre, créer et
-          inspirer.
+      <section id="welcome">
+        <h1>Bienvenue sur la page du club ILIA</h1>
+        <p class="h1-p">
+          Un espace où étudiants et passionnés explorent l'IA et le
+          développement logiciel à travers projets et ateliers.
         </p>
 
-        <p id="b">
-          <b>Origines</b><br />
-          En année fictive, 2025, un petit groupe d'étudiants passionnés
-          partageait un rêve commun : créer un espace où la motivation, la
-          créativité et la solidarité s'uniraient. Ils se réunissaient après les
-          cours pour échanger des idées, partager leurs ambitions et réfléchir à
-          un projet qui leur permettrait de laisser une empreinte positive dans
-          leur école et au-delà.
-        </p>
+        <div class="main-container">
+          <div class="first-bloc">
+            <div class="introduction">
+              <h3>Introduction</h3>
+              <p>
+                Il y a des idées qui naissent d'un simple échange entre amis et
+                qui finissent par devenir une aventure collective. Notre club
+                est né de cette conviction : ensemble, nous pouvons apprendre,
+                créer et inspirer.
+              </p>
+            </div>
 
-        <p id="c">
-          <b>Aujourd'hui et demain</b><br />
-          Notre histoire ne fait que commencer. Chaque membre qui nous rejoint
-          apporte sa lumière, son énergie et son talent. Ensemble, nous écrivons
-          la suite d'une aventure qui a commencé par un rêve et qui continue
-          grâce à une passion commune : créer un avenir meilleur, pas à pas,
-          projet après projet.
-        </p>
-        <div class="images">
-          <img
-            class="centre"
-            src="images/aya-images/3D_group_of_young_people_discussing_something_while_working_Illustration-removebg-preview.png"
-            alt="CENTRE"
-          />
-        </div>
+            <div class="origines">
+              <h3>Origines</h3>
+              <p>
+                Il y a des idées qui naissent d'un simple échange entre amis et
+                qui finissent par devenir une aventure collective. Notre club
+                est né de cette conviction : ensemble, nous pouvons apprendre,
+                créer et inspirer.
+              </p>
+            </div>
+          </div>
 
-        <div class="suggestions">
-          <div class="sug1">
-            <p><a href="#event-page">Événement</a></p>
+          <div class="second-bloc">
+            <img
+              class="guy"
+              src="images/aya-images/middleimg.png"
+              alt="guy images"
+            />
           </div>
-          <div>
-            <p class="sug2"><a href="#formations-realisees">Formations</a></p>
-          </div>
-          <div>
-            <p class="sug3"><a href="#projets-realises">Projets</a></p>
-          </div>
-          <div>
-            <p class="sug4"><a href="#formulaire">Rejoindre le club ILIA</a></p>
+
+          <div class="third-bloc">
+            <div class="aujourdhui-demain">
+              <h3>Aujourd'hui et demain</h3>
+              <p>
+                Notre histoire ne fait que commencer. Chaque membre qui nous
+                rejoint apporte sa lumière, son énergie et son talent. Ensemble,
+                nous écrivons la suite d'une aventure qui a commencé par un rêve
+                et qui continue grâce à une passion commune : créer un avenir
+                meilleur, pas à pas, projet après projet.
+              </p>
+            </div>
+
+            <div class="navbarbtns">
+              <button>Evenements</button>
+              <button>Formations</button>
+              <button>Projets</button>
+              <button>Rejoindre le club</button>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="event-page">
         <h1>Bienvenue à notre page d'événement</h1>
-        <p id="d">
+        <p class="h1-p" id="d">
           Même si notre club est encore jeune, nous avons déjà imaginé une série
           d'événements inspirants pour rassembler les membres, apprendre
           ensemble et partager de bons moments. Voici un aperçu des activités
@@ -186,9 +189,6 @@
             </div>
           </div>
         </div>
-        <p id="e">
-          <a href="index.html">Retourne à la page d'accueil</a>
-        </p>
       </section>
 
       <section id="formations-realisees">
@@ -198,20 +198,24 @@
         <div class="conteneur1">
           <!-- Premier dépliant -->
           <div class="conteneur2">
-            <p
-              class="rectangleborder1 accordion-toggle"
-              data-target="description1"
-            >
-              <span class="arrow">▼</span> Développement Web Moderne avec
-              JavaScript & React
-            </p>
-            <p class="rectangleborder2 accordion-content" id="description1">
-              Découvrez les bases et les bonnes pratiques du développement web.
-              Apprenez à construire des sites et applications interactives en
-              utilisant HTML, CSS, JavaScript et le framework React. Une
-              formation pratique avec des mini-projets pour renforcer votre
-              portfolio.
-            </p>
+            <div>
+              <p
+                class="rectangleborder1 accordion-toggle"
+                data-target="description1"
+              >
+                <span class="arrow">▼</span> Développement Web Moderne avec
+                JavaScript & React
+              </p>
+            </div>
+            <div>
+              <p class="rectangleborder2 accordion-content" id="description1">
+                Découvrez les bases et les bonnes pratiques du développement
+                web. Apprenez à construire des sites et applications
+                interactives en utilisant HTML, CSS, JavaScript et le framework
+                React. Une formation pratique avec des mini-projets pour
+                renforcer votre portfolio.
+              </p>
+            </div>
           </div>
 
           <!-- Deuxième dépliant -->
@@ -339,7 +343,7 @@
 
       <section id="photos">
         <h1>Souvenirs & Inspirations</h1>
-        <p>
+        <p class="h1-p">
           Chaque photo raconte une histoire, chaque moment reflète notre passion
           pour l'innovation et l'esprit d'équipe.
         </p>
@@ -389,7 +393,7 @@
 
       <section id="formulaire">
         <h1>Rejoindre notre club ILIA</h1>
-        <p>
+        <p class="h1-p">
           Rejoindre le club ILIA, c'est participer à une aventure collective
           autour de l'innovation et de la créativité. Remplissez ce formulaire
           et devenez membre actif de notre communauté !
@@ -407,7 +411,6 @@
                 name="nom-prenom"
                 placeholder="Nom Prénom"
                 required
-                autofocus
               />
             </div>
             <!-- age -->

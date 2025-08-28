@@ -3,11 +3,112 @@
 /* Import de la police Fredoka depuis Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 
-/* body {
-  margin: 2em 1em 0 1em;
+body {
+  margin: 5em 1em 0 1em;
   font-family: "Fredoka", sans-serif;
   background-color: #e4edff;
-} */
+}
+.navigation-bar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: #e4edff;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navigation-item {
+  font-size: 65%;
+  font-weight: 550;
+}
+
+.navigation-item a {
+  text-decoration: none;
+}
+
+.logo img {
+  margin-left: 0.5em;
+  width: 45px; /* taille fixe plus petite */
+  height: 45px; /* garder un carré pour le rond */
+  background-color: #0051ff;
+  padding: 5px; /* petit espace autour */
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: contain; /* ajuste l’image dans le cercle */
+}
+
+.accueil a {
+  color: #874ce4;
+}
+
+.ressources a {
+  color: #2157cb;
+}
+
+.club-ilia a {
+  color: #874ce4;
+}
+
+.ILIAFOLIO a {
+  color: #2157cb;
+}
+
+.contact a {
+  margin-right: 0.5em;
+  color: #874ce4;
+}
+
+.accueil:hover {
+  font-size: 110%;
+}
+
+.ressources:hover {
+  font-size: 110%;
+}
+
+.club-ilia :hover {
+  font-size: 110%;
+}
+
+.ILIAFOLIO :hover {
+  font-size: 110%;
+}
+.contact :hover {
+  font-size: 110%;
+}
+
+.accueil a:visited {
+  color: #874ce4;
+}
+
+.ressources a:visited {
+  color: #2157cb;
+}
+
+.club-ilia a :visited {
+  color: #874ce4;
+}
+
+.ILIAFOLIO a :visited {
+  color: #2157cb;
+}
+
+.contact a:visited {
+  color: #874ce4;
+}
+
+@media (min-width: 768px) {
+  /* .ilia-btn button {
+    opacity: 1;
+  } */
+  .navigation-item {
+    font-size: 1em;
+  }
+}
 
 /* Style des titres h1 */
 h1 {
@@ -192,7 +293,7 @@ h1 {
 
 /* Espacement entre les sections */
 section {
-  margin-bottom: 400px; /* Grande marge basse */
+  margin-bottom: 5em;
 }
 
 /* ===================== */

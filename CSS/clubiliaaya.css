@@ -1,50 +1,149 @@
-/* Import police Fredoka */
-@font-face {
-  font-family: "Fredoka";
-  font-style: normal;
-  font-weight: 300 700;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/fredoka/v16/X7n64b87HvSqjb_WIi2yDCRwoQ_k7367_DWs89XyHw.woff2)
-    format("woff2");
-  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC,
-    U+FB1D-FB4F;
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+body {
+  font-family: "Fredoka", sans-serif;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+  font-size: 2em;
+  background: linear-gradient(45deg, #2157cb, #874ce4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 0;
+  /* margin-bottom: 20px; */
+  /* margin-bottom: 5vh; */
+}
+.h1-p {
+  color: #2157cb;
+  text-align: center;
+  margin: 0 0 3em 0;
 }
 
-/* Section event-page */
-#event-page {
-  background-color: #e4edff;
-  font-family: "Fredoka", sans-serif;
-  font-size: large;
+.main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-/* Titre */
-#event-page h1 {
-  color: #2157cb;
-  margin: auto;
-  text-align: center;
-  margin-top: 50px;
-}
-
-/* Textes A et B */
-#event-page #d,
-#event-page #e {
-  background-color: #cebbec;
-  max-width: 700px;
-  border-radius: 20px;
-  margin: auto;
-  margin-top: 80px;
-  margin-bottom: 2em;
-  padding: 10px;
+  align-items: center;
   text-align: center;
 }
+.first-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2em;
+}
+.introduction {
+  font-size: 0.8em;
+  color: #f8faff;
+  background-color: #aa4dc2;
+  padding: 0.1em 0.5em 0.5em 0.5em;
+  border-radius: 2em;
+  transition: all 0.75s ease;
+}
+.introduction:hover {
+  background-color: #cf7fe3;
+  color: #6f1b83;
+  padding: 0.2em 0.6em 0.6em 0.6em;
+  font-size: 0.9em;
+}
 
-/* Effet hover sur paragraphes */
-#event-page p:hover {
-  transform: scale(1.1);
+.origines {
+  font-size: 0.8em;
+  color: white;
+  background-color: #874ce4;
+  padding: 0.1em 0.5em 0.5em 0.5em;
+  border-radius: 2em;
+  transition: all 0.75s ease;
+}
+.origines:hover {
+  background-color: #a2befc;
+  color: #0a2a6f;
+  padding: 0.2em 0.6em 0.6em 0.6em;
+  font-size: 0.9em;
+}
+
+.guy {
+  width: 20em;
+}
+
+.third-bloc {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.aujourdhui-demain {
+  color: white;
+  font-size: 0.8em;
+  background-color: #874ce4;
+  padding: 0.1em 0.5em 0.5em 0.5em;
+  border-radius: 2em;
+  margin-bottom: 1em;
+  transition: all 0.75s ease;
+}
+.aujourdhui-demain:hover {
+  background-color: #5b8fff;
+  font-size: 0.9em;
+  padding: 0.3em 0.7em 0.7em 0.7em;
+}
+.navbarbtns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5em;
+}
+.navbarbtns button {
+  font-family: "Fredoka", sans-serif;
+  border: none;
+  border-radius: 1em;
+  background-color: #a9c6ff;
+  color: #0a2a6f;
+  font-weight: 550;
+  width: 25em;
+  padding: 1em 0 1em 0;
+  transition: all 0.75s ease;
+}
+.navbarbtns button:hover {
+  background-color: #7ca5f8;
+  color: #0a2a6f;
+  transition: all 0.2s ease;
+}
+.navbarbtns button:active {
+  background-color: #aa4dc2;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-bloc {
+    flex: 1;
+    min-width: 200px;
+  }
+  .third-bloc {
+    flex: 1;
+    min-width: 200px;
+  }
+  .navbarbtns button {
+    width: 15em;
+  }
+}
+@media (min-width: 1200px) {
+  .guy {
+    min-width: 30em;
+  }
+  .navbarbtns button {
+    width: 25em;
+  }
 }
 
 /* Bande défilante */
