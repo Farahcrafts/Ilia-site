@@ -108,6 +108,7 @@ h1 {
   width: 25em;
   padding: 1em 0 1em 0;
   transition: all 0.75s ease;
+  cursor: pointer;
 }
 .navbarbtns button:hover {
   background-color: #7ca5f8;

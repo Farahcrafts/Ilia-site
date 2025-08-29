@@ -1,141 +1,30 @@
-/* === BASE STYLES === */
-
-/* Import de la police Fredoka depuis Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
-
-body {
-  margin: 5em 1em 0 1em;
-  font-family: "Fredoka", sans-serif;
-  background-color: #e4edff;
-}
-.navigation-bar {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  background-color: #e4edff;
-  height: 7vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-}
-
-.navigation-item {
-  font-size: 65%;
-  font-weight: 550;
-}
-
-.navigation-item a {
-  text-decoration: none;
-}
-
-.logo img {
-  margin-left: 0.5em;
-  width: 45px; /* taille fixe plus petite */
-  height: 45px; /* garder un carré pour le rond */
-  background-color: #0051ff;
-  padding: 5px; /* petit espace autour */
-  border-radius: 50%;
-  cursor: pointer;
-  object-fit: contain; /* ajuste l’image dans le cercle */
-}
-
-.accueil a {
-  color: #874ce4;
-}
-
-.ressources a {
-  color: #2157cb;
-}
-
-.club-ilia a {
-  color: #874ce4;
-}
-
-.ILIAFOLIO a {
-  color: #2157cb;
-}
-
-.contact a {
-  margin-right: 0.5em;
-  color: #874ce4;
-}
-
-.accueil:hover {
-  font-size: 110%;
-}
-
-.ressources:hover {
-  font-size: 110%;
-}
-
-.club-ilia :hover {
-  font-size: 110%;
-}
-
-.ILIAFOLIO :hover {
-  font-size: 110%;
-}
-.contact :hover {
-  font-size: 110%;
-}
-
-.accueil a:visited {
-  color: #874ce4;
-}
-
-.ressources a:visited {
-  color: #2157cb;
-}
-
-.club-ilia a :visited {
-  color: #874ce4;
-}
-
-.ILIAFOLIO a :visited {
-  color: #2157cb;
-}
-
-.contact a:visited {
-  color: #874ce4;
-}
-
-@media (min-width: 768px) {
-  /* .ilia-btn button {
-    opacity: 1;
-  } */
-  .navigation-item {
-    font-size: 1em;
-  }
-}
-
-/* Style des titres h1 */
-h1 {
-  font-size: 2em; /* Taille de police */
-  text-align: center; /* Centrage du texte */
-  color: blueviolet; /* Couleur violette */
-}
-
 /* Conteneur principal flexible */
 .conteneur1 {
   display: flex; /* Disposition en flexbox */
   flex-direction: row; /* Direction horizontale */
-  justify-content: space-around; /* Espacement égal entre éléments */
+  justify-content: center; /* Centre les éléments */
+  flex-wrap: wrap; /* Permet le retour à la ligne */
+  gap: 20px; /* Espace entre éléments*/
+  padding: 20px; /* marge interieure */
 }
 
 /* Style des rectangles des titres d'accordéon */
 .rectangleborder1 {
   border: 3px solid blueviolet; /* Bordure violette */
-  width: 400px; /* Largeur fixe */
-  height: 100px; /* Hauteur fixe */
+  width: 100%; /* S'adapte à la largeur du conteneur */
+  min-height: 100px; /* Hauteur minimale */
+  height: auto; /* Hauteur automatique */
   border-radius: 50px; /* Coins arrondis */
   background-color: blueviolet; /* Fond violet */
   color: white; /* Texte blanc */
-  font-size: 1.3em; /* Taille de police */
+  font-size: 1em; /* Taille de police */
   display: flex; /* Flexbox pour centrage */
   justify-content: center; /* Centrage horizontal */
   align-items: center; /* Centrage vertical */
+  padding: 15px; /* Espacement interne */
+  text-align: center; /* Texte centré */
+  word-wrap: break-word; /* Gestion des mots longs */
+  box-sizing: border-box; /* Inclut padding dans la largeur */
 }
 
 /* Conteneur pour chaque accordéon (titre + contenu) */
@@ -143,53 +32,47 @@ h1 {
   display: flex; /* Disposition en flexbox */
   flex-direction: column; /* Direction verticale */
   gap: 10px; /* Espace entre les éléments */
+  align-items: center; /* Centre horizontalement */
+  width: 100%; /* Prend toute la largeur sur mobile */
+  max-width: 320px; /* Largeur maximale pour desktop */
 }
 
 /* Style des rectangles de contenu d'accordéon */
 .rectangleborder2 {
   border: 3px solid blueviolet; /* Bordure violette */
-  width: 400px; /* Largeur fixe */
-  height: 300px; /* Hauteur fixe */
+  width: 100%; /* Même largeur que le titre */
+  min-height: 200px; /* Hauteur minimale */
+  height: auto; /* Hauteur automatique */
   border-radius: 50px; /* Coins arrondis */
   background-color: blueviolet; /* Fond violet */
   color: white; /* Texte blanc */
-  font-size: 1.3em; /* Taille de police */
+  font-size: 1em; /* Taille de police */
   padding: 20px; /* Espacement interne */
   display: flex; /* Flexbox pour centrage */
   justify-content: center; /* Centrage horizontal */
   align-items: center; /* Centrage vertical */
-}
+  box-sizing: border-box; /* Inclut padding dans la largeur */
 
-/* Style par défaut pour le contenu des accordéons (masqué) */
-.rectangleborder2 {
-  display: none; /* Masqué par défaut */
-  opacity: 0; /* Transparent */
-  transition: opacity 0.3s ease-in-out; /* Transition pour l'opacité */
+  /* Version pour l'animation de hauteur */
+  max-height: 0; /* Hauteur maximale à 0 (masqué) */
+  overflow: hidden; /* Cache le contenu débordant */
+  transition: max-height 0.3s ease, opacity 0.2s ease; /* Transitions */
+  opacity: 0;
 }
 
 /* Style quand l'accordéon est actif (visible) */
 .rectangleborder2.active {
-  display: flex; /* Affiché en flexbox */
-  opacity: 1; /* Complètement opaque */
-}
-
-/* Version alternative pour l'animation de hauteur */
-.rectangleborder2 {
-  max-height: 0; /* Hauteur maximale à 0 (masqué) */
-  overflow: hidden; /* Cache le contenu débordant */
-  transition: max-height 0.3s ease, opacity 0.2s ease; /* Transitions */
-}
-
-/* Version alternative pour l'accordéon actif */
-.rectangleborder2.active {
   max-height: 500px; /* Hauteur maximale étendue */
+  opacity: 1; /* Complètement opaque */
 }
 
 /* Style des cartes de projets */
 .rectangleborder3 {
   border: 3px solid #6ca7f4; /* Bordure bleue */
-  width: 230px; /* Largeur fixe */
-  height: 400px; /* Hauteur fixe */
+  width: 100%; /* S'adapte sur mobile */
+  max-width: 250px; /* Largeur maximale sur desktop */
+  height: auto; /* Hauteur automatique */
+  min-height: 400px; /* Hauteur minimale */
   border-radius: 50px; /* Coins arrondis */
   background-color: #6ca7f4; /* Fond bleu */
   color: white; /* Texte blanc */
@@ -200,6 +83,8 @@ h1 {
   align-items: center; /* Centrage horizontal */
   padding: 15px; /* Espacement interne */
   gap: 10px; /* Espace entre éléments */
+  margin: 0 auto; /* Centrage horizontal */
+  box-sizing: border-box; /* Inclut padding dans la largeur */
 }
 
 /* Transition pour les effets de zoom */
@@ -213,13 +98,13 @@ h1 {
 .rectangleborder1:hover,
 .rectangleborder2:hover,
 .rectangleborder3:hover {
-  transform: scale(1.1); /* Agrandissement de 10% */
+  transform: scale(1.05); /* Agrandissement de 5% */
 }
 
 /* Changement de couleur au survol des cartes projets */
 .rectangleborder3:hover {
   background-color: mediumorchid; /* Fond violet */
-  border: 2px solid mediumorchid; /* Bordure violette */
+  border: 3px solid mediumorchid; /* Bordure violette */
 }
 
 /* Curseur pointer pour les titres d'accordéon */
@@ -240,16 +125,13 @@ h1 {
   display: flex; /* Flexbox pour centrage */
   justify-content: center; /* Centrage horizontal */
   align-items: center; /* Centrage vertical */
-}
-
-/* Curseur pointer pour les boutons */
-.rectangleborder4:hover {
-  cursor: pointer; /* Indique que c'est cliquable */
+  cursor: pointer; /* Curseur pointer */
+  transition: all 0.2s ease; /* Transition pour les changements */
 }
 
 /* Effet au clic sur les boutons */
 .rectangleborder4:active {
-  border: #9d39b5; /* Bordure violette */
+  border-color: #9d39b5; /* Bordure violette */
   background-color: #9d39b5; /* Fond violet */
   color: white; /* Texte blanc */
 }
@@ -259,12 +141,16 @@ h1 {
   font-size: 1.3em; /* Grande taille de police */
   font-weight: bold; /* Texte en gras */
   text-align: center; /* Centrage du texte */
+  margin: 10px 0; /* Espacement */
 }
 
 /* Style de la description des projets */
 .Description-Projet {
   font-size: 1em; /* Taille de police */
   color: black; /* Texte noir */
+  text-align: center; /* Centrage du texte */
+  line-height: 1.4; /* Hauteur de ligne */
+  margin: 10px 0; /* Espacement */
 }
 
 /* Conteneur des images de projets */
@@ -294,6 +180,24 @@ h1 {
 /* Espacement entre les sections */
 section {
   margin-bottom: 5em;
+  padding: 0 20px;
+}
+
+/* Style pour les en-têtes */
+h1 {
+  text-align: center;
+  color: blueviolet;
+  margin: 40px 0 30px;
+}
+
+/* Amélioration de l'apparence des flèches */
+.arrow {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-toggle.active .arrow {
+  transform: rotate(180deg);
 }
 
 /* ===================== */
@@ -308,33 +212,26 @@ section {
 
   .conteneur1 {
     flex-direction: column; /* Disposition verticale */
-    align-items: center; /* Centrage des éléments */
-    gap: 20px; /* Espace entre éléments */
+    align-items: center; /* Centrage des éléments suivant l'axe secondaire*/
+    gap: 25px; /* Espace entre éléments */
+  }
+
+  .conteneur2 {
+    width: 90%; /* Prend 90% de la largeur */
   }
 
   .rectangleborder1,
   .rectangleborder2 {
-    width: 90%; /* Largeur adaptative */
-    height: auto; /* Hauteur automatique */
-    border-radius: 30px; /* Coins moins arrondis */
-    font-size: 0.7em; /* Taille police réduite */
+    width: 100%; /* Pleine largeur dans le conteneur */
+    font-size: 0.9em; /* Taille de police légèrement réduite */
   }
 
   .rectangleborder3 {
-    width: 90%; /* Largeur adaptative */
-    height: auto; /* Hauteur automatique */
-    border-radius: 30px; /* Coins moins arrondis */
-    font-size: 0.7em; /* Taille police réduite */
+    width: 85%; /* Largeur légèrement réduite pour un meilleur rendu */
   }
 
-  .rectangleborder4 {
-    width: 120px; /* Largeur réduite */
-    height: 40px; /* Hauteur réduite */
-    font-size: 0.7em; /* Taille police réduite */
-  }
-
-  .photo-projet {
-    height: 120px; /* Hauteur réduite */
+  .Titre-Projet {
+    font-size: 1.1em; /* Ajustement de la taille */
   }
 }
 
@@ -345,19 +242,15 @@ section {
   }
 
   .conteneur1 {
-    flex-wrap: wrap; /* Retour à la ligne si besoin */
-    justify-content: center; /* Centrage des éléments */
-    gap: 20px; /* Espace entre éléments */
+    justify-content: center; /* Centre les éléments */
   }
 
-  .rectangleborder1,
-  .rectangleborder2,
-  .rectangleborder3 {
+  .conteneur2 {
     width: 45%; /* Deux colonnes */
-    height: auto; /* Hauteur automatique */
   }
 
-  .photo-projet {
-    height: 140px; /* Hauteur moyenne */
+  .rectangleborder3 {
+    width: 45%; /* Deux colonnes pour les projets */
+    max-width: none; /* Supprime la limite max */
   }
 }
